@@ -84,8 +84,32 @@ h3 {
     bottom: 2%;
     left: 5.2%;
     font-size: 20px;
+    opacity: 0.9;
 }
 
 .col-4 {
     flex: 0 0 30%;
+}
+
+img.img-fluid {
+    width: 450px;
+    height: 193px;
+    border: #147efb solid 2px;
+    box-shadow: 5px 10px;
+}
+
+h3.carousel-caption.p-1.mt-4 {
+    width: 93.5%;
+}
+
+.carousel-caption {
+    left: 3.2%;
+}
+
+.fixed-bottom {
+    position: relative;
+}
+
+.fa {
+    color: #147efb;
 }
