@@ -8,6 +8,8 @@
     <!-- link bootstrap css & js-->
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -17,9 +19,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
     <!-- link custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700" rel="stylesheet"
+        type="text/css">
+    <script src="assets/js/app.js"></script>
 
     <title>Ben Kha</title>
 </head>
@@ -27,9 +34,9 @@
 <body>
     <header>
         <div id="header" class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <h1 class="logo py-4 px-4 font-weight-bold text-center text-light">Ben Kha</h1>
+                    <h1 class="logo py-4 px-4 font-weight-bold">Ben Kha</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -59,17 +66,17 @@
     </header>
 
     <section>
-        <div class="container bg-white mt-5 pt-3 border border-secondary">
+        <div class="container bg-white mt-5 pt-3">
             <div class="row no-gutters">
-                <div class="col-12">
+                <div class="col-md-12">
                     <h2 class="font-weight-bold border-bottom">About Me</h2>
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-2 pt-4">
-                    <img src="assets/images/Ben.JPG" class="img-fluid" alt="Picture of Ben" width="180" height="125">
+                <div class="col-md-6 pt-4">
+                    <img src="assets/images/Ben.JPG" class="img-fluid float-left ben" alt="Picture of Ben">
                 </div>
-                <div class="col-10 pt-4 pl-4">
+                <div class="col-md-6 pt-4 pl-4">
                     <p>
                         I'm Ben - an accountant turned aspiring software developer from Los Angeles, California. I am
                         passionate
@@ -81,40 +88,46 @@
                         have the
                         opportunity to work on interesting projects and get advice from some of the best. Check out my
                         latest
-                        and greatest projects on the Portfolios page.
-                    </p>
-                    <p>
+                        and greatest projects on the Portfolios page.<br><br>
                         If you are interested in working with me, say hi and send
                         me a message
                         on the contacts page. Thanks for checking out my page!
                     </p>
+                    <div>
+                        <a href="https://github.com/Benk0033" target="_blank">
+                            <i style="font-size:44px" class="fa">&#xf09b;</i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ben-kha-7b49b767/" target="_blank">
+                            <i style="font-size:44px" class="fa">&#xf08c;</i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="mb-5">
-        <div class="container bg-white mt-5 pt-3 border border-secondary">
+        <div class="container bg-white mt-5 pt-3">
             <div class="row mb-4">
-                <div class="col-12">
+                <div class="col-md-12">
                     <h2 class="font-weight-bold border-bottom">Portfolio</h2>
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-6">
-                    <a href="https://github.com/corejola/Project-01" target="_blank">View Code</a>
-                    <a href="http://corejola.github.io/Project-01" target="_blank">
+                <div class="col-md-6">
+                    <a href="https://github.com/corejola/CoffeeThin-StoreLocator" target="_blank">View Code</a>
+                    <a href="https://corejola.github.io/CoffeeThin-StoreLocator/" target="_blank">
 
-                        <img src="assets/images/TN-Product-Locator.png" class="img-fluid" alt="TN-Product-Locator">
+                        <img src="assets/images/TN-Product-Locator.png" class="img-fluid work" alt="CT-Product-Locator">
                         <div>
-                            <h3 class="carousel-caption p-1 mt-4">Tierra Nueva Product Locator</h3>
+                            <h3 class="carousel-caption p-1 mt-4">Coffee Thins Product Locator</h3>
                     </a>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <a href="https://github.com/Benk0033/sequelizedBurger" target="_blank">View Code</a>
                 <a href="https://infinite-sierra-43088.herokuapp.com/" target="_blank">
-                    <img src="assets/images/Burger app.png" class="img-fluid" alt="burger2">
+                    <img src="assets/images/Burger app.png" class="img-fluid work" alt="burger2">
                     <div>
                         <h3 class="carousel-caption p-1 mt-4">Eat-Teh-Burgers! The Sequel</h3>
                     </div>
@@ -122,19 +135,20 @@
             </div>
         </div>
         <div class="row mb-4">
-            <div class="col-6">
+            <div class="col-md-6">
                 <a href="https://github.com/Benk0033/burger" target="_blank">View Code</a>
                 <a href="https://infinite-gorge-67341.herokuapp.com/" target="_blank">
-                    <img src="assets/images/Burger app.png" class="img-fluid" alt="burger">
+                    <img src="assets/images/Burger app.png" class="img-fluid work" alt="burger">
                     <div>
                         <h3 class="carousel-caption p-1 mt-4">Eat-Teh-Burgers!</h3>
                     </div>
                 </a>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <a href="https://github.com/Benk0033/Bamazon" target="_blank">View Code</a>
                 <a href="https://github.com/Benk0033/Bamazon" target="_blank">
-                    <img src="assets/images/Screen Shot 2019-06-13 at 11.32.56 PM.png" class="img-fluid" alt="Bamazon">
+                    <img src="assets/images/Screen Shot 2019-06-13 at 11.32.56 PM.png" class="img-fluid work"
+                        alt="Bamazon">
                     <div>
                         <h3 class="carousel-caption p-1 mt-4">Bamazon</h3>
                     </div>
@@ -144,19 +158,10 @@
         </div>
     </section>
 
-    <div class="container bg-white mt-5 pt-3 border border-secondary">
+    <div class="container bg-white mt-5 pt-3">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-12">
                 <h2 class="font-weight-bold border-bottom">Contact Me</h2>
-
-            </div>
-            <div class="col-6">
-                <a href="https://github.com/Benk0033" target="_blank">
-                    <i style="font-size:44px" class="fa">&#xf09b;</i>
-                </a>
-                <a href="https://www.linkedin.com/in/ben-kha-7b49b767/" target="_blank">
-                    <i style="font-size:44px" class="fa">&#xf08c;</i>
-                </a>
             </div>
         </div>
         <form action="mailto:benk0033@gmail.com" method="post" enctype="text/plain">
@@ -172,11 +177,11 @@
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" rows="7"></textarea>
             </div>
-            <button type="submit" class="btn mb-3">Submit</button>
+            <button type="submit" class="btn mb-3">Send</button>
         </form>
     </div>
 
-    <footer class="fixed-bottom bg-secondary text-light text-center py-3 border-top border-primary">
+    <footer class="fixed-bottom text-center py-3 border-top border-secondary">
         &#169 Copyright 2019 Ben Kha
     </footer>
 
