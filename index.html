@@ -35,8 +35,17 @@
 </head>
 
 <body>
+
     <header>
         <div id="header" class="container">
+            <div id="icon-bar">
+                <a class="active" href="#aboutMe"><i class="fa fa-home"></i></a>
+                <a href="#portfolio"><i class="fa fa-briefcase"></i></a>
+                <a href="#contactMe"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/Benk0033" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ben-kha-7b49b767/" target="_blank"><i
+                        class="fa fa-linkedin"></i></a>
+            </div>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="index.html">
                     <h1 class="logo py-4 px-4 font-weight-bold">Ben Kha</h1>
@@ -72,11 +81,11 @@
         <div class="container mt-5 pt-3">
             <div class="row no-gutters">
                 <div class="col-md-12">
-                    <h2 class="font-weight-bold border-bottom">About Me</h2>
+                    <h2 class="font-weight-bold border-bottom" id="aboutMe">About Me</h2>
                 </div>
             </div>
             <div class="row no-gutters about">
-                <div class="col-md-12">
+                <div class="col-md-12 about">
                     <img src="assets/images/Ben.JPG" class="img-responsive pull-left ben" alt="Picture of Ben">
                     <!-- </div> -->
                     <!-- <div class="col-lg-10 pt-4 pl-4 about-content"> -->
@@ -91,7 +100,7 @@
                         If you are interested in working with me, say hi and send me a message
                         on the contacts page. Thanks for checking out my page!
                     </p>
-                    <div>
+                    <div class="icon-container">
                         <a href="https://github.com/Benk0033" target="_blank">
                             <i style="font-size:44px" class="fa">&#xf09b;</i>
                         </a>
@@ -108,7 +117,7 @@
         <div class="container mt-5 pt-3">
             <div class="row mb-4">
                 <div class="col-md-12">
-                    <h2 class="font-weight-bold border-bottom">Portfolio</h2>
+                    <h2 class="font-weight-bold border-bottom" id="portfolio">Portfolio</h2>
                 </div>
             </div>
             <div class="row mb-4">
@@ -182,6 +191,14 @@
                     </a>
                 </div>
                 <div class="item d">
+                    <a href="https://benk0033.github.io/clicky-game/" target="_blank">
+                        <img src="assets/images/Click-game.png" class="img-fluid work" alt="Click-game">
+                        <div>
+                            <h3 class="carousel-caption p-1 mt-4">DBZ Clicky Game</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="item e">
                     <a href="https://corejola.github.io/CoffeeThin-StoreLocator/" target="_blank">
                         <img src="assets/images/TN-Product-Locator.png" class="img-fluid work" alt="CT-Product-Locator">
                         <div>
@@ -189,8 +206,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="item e">E</div>
-                <div class="item f">F</div>
+                <div class="item f">
+                    <a href="https://github.com/Benk0033/Bamazon" target="_blank">
+                        <img src="assets/images/bamazon.png" class="img-fluid work" alt="bamazon">
+                        <div>
+                            <h3 class="carousel-caption p-1 mt-4">Bamazon</h3>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="next">Next</div>
@@ -200,7 +223,7 @@
     <div class="container mt-5 pt-3">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="font-weight-bold border-bottom">Contact Me</h2>
+                <h2 class="font-weight-bold border-bottom" id="contactMe">Contact Me</h2>
             </div>
         </div>
         <form action="mailto:benk0033@gmail.com" method="post" enctype="text/plain">

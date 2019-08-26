@@ -22,6 +22,78 @@ body, html {
     /* background-size: cover; */
 }
 
+#icon-bar {
+    /* width: 100%; */
+    background-color: #555;
+    overflow: hidden;
+}
+
+#icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+#icon-bar a:hover {
+    background-color: #000;
+}
+
+.sticky {
+    position: fixed;
+    top: 10px;
+    width: 66.5%;
+    /* margin-top: 10px; */
+    z-index: 100;
+}
+
+@media screen and (max-width: 1024px) {
+    .sticky {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sticky {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sticky {
+        width: 89%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sticky {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .sticky {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sticky {
+        width: 88%;
+    }
+}
+
+.sticky+.navbar {
+    padding-top: 80px;
+}
+
+/* .active {
+    background-color: #4CAF50;
+} */
+
 .container {
     width: 100%;
     max-width: 960px;
@@ -131,14 +203,24 @@ h3 {
     float: left;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: transform .2s;
+}
+
+.ben:hover {
+    filter: saturate();
 }
 
 .work {
     width: 100%;
     height: 193px;
+    transition: transform .2s;
     /* width: 100%;
     height: 50%; */
     /* box-shadow: 5px 10px; */
+}
+
+.work:hover {
+    transform: scale(1.1);
 }
 
 /* h3.carousel-caption.p-1.mt-4 { */
@@ -154,7 +236,14 @@ h3 {
 }
 
 .fa {
-    color: #777777!important;
+    color: #777777;
+    transition: transform .5s ease;
+    backface-visibility: hidden;
+}
+
+.fa:hover {
+    color: blue;
+    transform: scale(1.1);
 }
 
 a {
@@ -237,14 +326,14 @@ footer {
 .next, .prev {
     color: #444;
     position: absolute;
-    top: 1650px;
+    top: 770px;
     padding: 1em 2em;
     cursor: pointer;
     background: #CCC;
     border-radius: 5px;
     border-top: 1px solid #FFF;
     box-shadow: 0 5px 0 #999;
-    transition: box-shadow 0.1s, top 0.1s;
+    /* transition: box-shadow 0.1s, top 0.1s; */
 }
 
 .next:hover, .prev:hover {
@@ -252,7 +341,7 @@ footer {
 }
 
 .next:active, .prev:active {
-    top: 1650px;
+    top: 770px;
     box-shadow: 0 1px 0 #999;
 }
 

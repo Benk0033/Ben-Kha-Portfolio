@@ -1,5 +1,21 @@
 $(document).ready(function ($) {
 
+    window.onscroll = function () {
+        stickyTop()
+    };
+
+    var iconbar = document.getElementById("icon-bar");
+    var sticky = iconbar.offsetTop;
+
+    function stickyTop() {
+        if (window.pageYOffset >= sticky) {
+
+            iconbar.classList.add("sticky")
+        } else {
+            iconbar.classList.remove("sticky")
+        }
+    };
+
     // $(".scroll").click(function (event) {
     //     event.preventDefault();
     //     $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
