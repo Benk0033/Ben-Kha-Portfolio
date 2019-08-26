@@ -121,20 +121,17 @@ h3 {
 }
 
 .ben {
-    width: 100%;
+    margin-right: 10px;
+    width: 25%;
     height: auto;
     box-shadow: 5px 10px;
     border-radius: 50%;
+    shape-outside: ellipse();
+    clip-path: ellipse();
     float: left;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
-
-/* .about-content {
-    shape-outside: ellipse(100px 200px at 50% 50%);
-    clip-path: ellipse(100px 200px at 50% 50%);
-    width: 300px;
-    height: 500px;
-    float: left;
-} */
 
 .work {
     width: 100%;
