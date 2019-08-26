@@ -206,6 +206,43 @@ h3 {
     transition: transform .2s;
 }
 
+.dialogbox {
+    position: relative;
+    /* display: inline-block; */
+    /* border-bottom: 1px dotted black; */
+}
+
+.dialogbox .dialogtext {
+    visibility: hidden;
+    width: 110px;
+    background-color: #FFF;
+    color: black;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 84%;
+    transform: rotate(-30deg)
+}
+
+.dialogbox .dialogtext::after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    margin-top: -5px;
+    border-width: 0 1rem 1rem 0;
+    border-style: solid;
+    border-color: transparent #FFF transparent transparent;
+    transform: translate(99%);
+}
+
+.dialogbox:hover .dialogtext {
+    visibility: visible;
+}
+
 .ben:hover {
     filter: saturate();
 }
