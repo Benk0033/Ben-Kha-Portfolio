@@ -19,9 +19,9 @@ $(document).ready(function ($) {
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
+            document.getElementById("topArrow").style.display = "block";
         } else {
-            document.getElementById("myBtn").style.display = "none";
+            document.getElementById("topArrow").style.display = "none";
         }
     }
 
@@ -34,6 +34,30 @@ $(document).ready(function ($) {
     //     $(".top-menu ul").slideToggle("slow", function () {
     //     });
     // });
+
+    var coll = document.getElementsByClassName("collapsible");
+    var showText = document.getElementById("showText");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("activate");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+
+            if (this.classList.contains("activate")) {
+                showText.innerHTML = "Show Less";
+            }
+            else {
+                showText.innerHTML = "Show More";
+
+            }
+        });
+    };
 
     var carousel = $(".carousel"),
         currdeg = 0;
@@ -62,4 +86,4 @@ $(document).ready(function ($) {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}
+};
