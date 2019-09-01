@@ -29,14 +29,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
         type="text/javascript"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-18/CopyShader.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141552/03_glitch.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-18/EffectComposer.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-18/RenderPass.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-18/ShaderPass.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-18/MaskPass.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141552/08_texturepass.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+        type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-18/GlitchPass.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
 
     <title>Ben Kha</title>
 </head>
 
 <body>
+
+    <!-- <div id="initial-loader" class="padded"><span id="loader-text"></span></div> -->
+
+    <div id="page-effect">
+    </div>
+    <!-- <div id="page-structure" class="ajax"> -->
+    <!-- <header class="eliza height-95 black back-block-green-bottom-right">
+                <nav class="padded">
+                    <a href="http://nclud.com" target="_blank"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141552/logo.svg" id="nclud-logo"></a>
+                </nav>
+                <div class="header-text grid_row padded-horizontal">
+                    <h2 class="grid2">Revolutionary is our baseline. Different is our first step. And radical means
+                        we’re just getting started.</h2>
+                    <h1 class="grid3">We are nclud.</h1>
+                </div>
+
+                <div id="canvas">
+                    <img id="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141552/header-home-fallback.jpg"
+                        data-fallback="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141552/header-home-fallback.jpg">
+                </div>
+            </header>
+            </footer> -->
+
     <header>
-        <div id="header" class="container">
+        <div id="initial-loader" class="padded"><span id="loader-text"></span></div>
+        <div id="header page-structure" class="container ajax">
             <div id="icon-bar">
                 <a class="active" href="#aboutMe"><i class="fa fa-home"></i></a>
                 <a href="#portfolio"><i class="fa fa-briefcase"></i></a>
@@ -93,14 +131,21 @@
                     <!-- <div class="col-lg-10 pt-4 pl-4 about-content"> -->
                     <p>
                         I'm Ben - a user-focused Web and Applications Developer with a passion for integrating
-                        technologies to solve problems and improve upon existing methods. Enjoys leveraging background
-                        in business systems analytics, finance, accounting and customer service to provide unique
-                        perspectives on how end-users interact with websites and software platforms. Passionate about
-                        approaching programming challenges from different angles, and collaborating with others to
+                        technologies to solve problems and improve upon existing methods. Enjoys leveraging
+                        background
+                        in business systems analytics, finance, accounting and customer service to provide
+                        unique
+                        perspectives on how end-users interact with websites and software platforms. Passionate
+                        about
+                        approaching programming challenges from different angles, and collaborating with others
+                        to
                         create meaningful full stack applications. <br><br>
 
-                        Experienced with Javascript, ReactJS, HTML5, CSS3, NodeJS, Express, and MongoDB/MySql using git
-                        workflow and MVC(Model-View-Controller) paradigm. I am continuously striving to hone these
+                        Experienced with Javascript, ReactJS, HTML5, CSS3, NodeJS, Express, and MongoDB/MySql
+                        using
+                        git
+                        workflow and MVC(Model-View-Controller) paradigm. I am continuously striving to hone
+                        these
                         skills and always up for learning new things.<br><br>
 
                         If you are interested in working with me, say hi and send me a message
@@ -277,6 +322,10 @@
     <footer class="fixed-bottom text-center py-3 border-top border-secondary">
         <!-- &#169 Copyright 2019 Ben Kha -->
     </footer>
+
+    <!-- </div> -->
+
+    <!-- </div> -->
 
 </body>
 
