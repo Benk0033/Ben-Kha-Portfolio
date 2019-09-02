@@ -244,8 +244,6 @@ $(document).ready(function ($) {
 
             bgMesh.material.map.needsUpdate = true;
 
-
-
             var sceneMask = new THREE.Scene();
 
             renderer = new THREE.WebGLRenderer();
@@ -261,7 +259,7 @@ $(document).ready(function ($) {
             renderBackground = new THREE.RenderPass(sceneBG, camera);
 
             // $(renderer.domElement).attr('id', 'loader').css('height', height);
-            $(renderer.domElement).attr('id', 'loader').css('height', 1000);
+            $(renderer.domElement).attr('id', 'loader').css('height', 900);
             $('#page-effect').append(renderer.domElement);
 
             var rtParameters = { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat, stencilBuffer: true };
