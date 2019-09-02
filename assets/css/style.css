@@ -48,8 +48,14 @@ body, html {
 #icon-bar {
     /* width: 100%; */
     /* background-color: #555; */
+    /* opacity: .95; */
     /* background-color: transparent; */
     overflow: hidden;
+    background-color: #FFF;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    /* background-color: white; */
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 #icon-bar a {
@@ -319,9 +325,6 @@ h3 {
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
-    /* width: 100%;
-    height: 50%; */
-    /* box-shadow: 5px 10px; */
 }
 
 .work:hover {
@@ -340,6 +343,11 @@ h3 {
     text-align: left;
     outline: none;
     font-size: 15px;
+    /* padding: 10px 10px 20px 10px; */
+    border: 1px solid #BFBFBF;
+    /* background-color: white; */
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin-bottom: 10px;
 }
 
 .activate, .collapsible:hover {
