@@ -134,7 +134,7 @@ $(document).ready(function ($) {
     function initialLoader() {
         $('body').removeClass('noscroll');
 
-        var loadText = 'Hello: Welcome to my page.';
+        var loadText = 'Welcome';
         var loaderDone = false;
         $.each(loadText.split(''), function (i, letter) {
             setTimeout(function () {
@@ -372,7 +372,7 @@ $(document).ready(function ($) {
             $('#initialLoader').remove();
         }, 1401);
     }
-
+    //////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////
     window.onscroll = function () {
         stickyTop()
