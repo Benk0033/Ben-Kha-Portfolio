@@ -3,6 +3,8 @@
     margin: 0px;
 }
 
+/* page load glitch effect styling begin */
+
 #page-structure {
     /* height: 100vh; */
     height: 100%;
@@ -18,12 +20,7 @@
     font-family: monospace;
 }
 
-/* .header-text {
-    h2, h1 {
-        font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif !important;
-        font-weight: 900 !important;
-    }
-} */
+/* page load glitch effect styling end */
 
 body, html {
     width: 100%;
@@ -36,25 +33,23 @@ body, html {
     font-size: 18px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     scroll-behavior: smooth;
-    /* margin: 0;
-    padding: 0; */
     background-size: 100% 100%;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-position: center; */
-    /* background-size: cover; */
 }
 
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* styling for navbar begin */
+
 #icon-bar {
-    /* width: 100%; */
-    /* background-color: #555; */
-    /* opacity: .95; */
-    /* background-color: transparent; */
     overflow: hidden;
     background-color: #FFF;
     padding: 10px 10px 0 10px;
     border: 1px solid #BFBFBF;
-    /* background-color: white; */
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
@@ -80,41 +75,9 @@ body, html {
     z-index: 100;
 }
 
-/* @media screen and (max-width: 1024px) {
-    .sticky {
-        width: 94%;
-    }
+.sticky+.navbar {
+    padding-top: 80px;
 }
-
-@media screen and (max-width: 768px) {
-    .sticky {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .sticky {
-        width: 89%;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .sticky {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 411px) {
-    .sticky {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .sticky {
-        width: 88%;
-    }
-} */
 
 /* Extra small devices (phones, 600px and down) */
 
@@ -156,28 +119,6 @@ body, html {
     }
 }
 
-.sticky+.navbar {
-    padding-top: 80px;
-}
-
-/* .active {
-    background-color: #4CAF50;
-} */
-
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    /* height: 100%;
-    height: auto; */
-    /* background-image: url(../images/banner.jpg);
-    background-size: 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-position: center; */
-}
-
 #header {
     padding-left: 0;
     padding-right: 0;
@@ -189,31 +130,15 @@ h1 {
 }
 
 header {
-    /* background: #ffffff;
-    color: #ffffff; */
-    /* border-bottom: 2px solid #cccccc; */
-    /* background-image: url(../images/banner.jpg);
-    background-size: 100%; */
     margin: 70px 20px 0;
 }
 
 .logo {
-    /* background: #147efb; */
     font-family: 'Georgia', Times, Times New Roman, serif;
-    /* color: #ffffff; */
     font-size: 30px;
     width: 250px;
     margin-bottom: 0;
 }
-
-/* .bg-light { */
-
-/* background: #ffffff!important; */
-
-/* background-image: url(../images/banner.jpg);
-    background-size: 150%; */
-
-/* } */
 
 .navbar {
     padding: 0;
@@ -232,6 +157,8 @@ li a {
     padding-left: 15px;
 }
 
+/* styling for navbar end */
+
 h2 {
     font-size: 30px;
     line-height: 49px;
@@ -248,25 +175,20 @@ h3 {
     color: #ffffff;
 }
 
-.carousel-caption {
-    bottom: 2%;
-    left: 3.2%;
-    font-size: 20px;
-    opacity: 0.9;
-    width: 93.8%;
-    background-color: #777777;
-    position: absolute;
-}
+/* styling for AboutMe section begin */
 
 .col-4 {
     flex: 0 0 30%;
 }
 
+/* styling for image of Ben in AboutMe section */
+
 .ben {
     margin-right: 10px;
     width: 25%;
     height: auto;
-    box-shadow: 5px 10px;
+    /* box-shadow: 5px 10px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     shape-outside: ellipse();
     clip-path: ellipse();
@@ -276,10 +198,10 @@ h3 {
     transition: transform .2s;
 }
 
+/* styling for dialog box when hovering over image of Ben */
+
 .dialogbox {
     position: relative;
-    /* display: inline-block; */
-    /* border-bottom: 1px dotted black; */
 }
 
 .dialogbox .dialogtext {
@@ -317,6 +239,14 @@ h3 {
     filter: contrast(150%);
 }
 
+/* styling for AboutMe section end */
+
+/* styling for portfolio section begin */
+
+.col-md-6 {
+    position: relative;
+}
+
 .work {
     width: 100%;
     height: 193px;
@@ -327,11 +257,95 @@ h3 {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
+/* zooms in on project image on hover */
+
 .work:hover {
     transform: scale(1.1);
 }
 
-/* show more content */
+/* image text for projects */
+
+.carousel-caption {
+    bottom: 2%;
+    left: 3.2%;
+    font-size: 20px;
+    opacity: 0.9;
+    width: 93.8%;
+    background-color: #777777;
+    position: absolute;
+}
+
+/* Popup container - can be anything you want */
+
+.popup {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #008CBA; */
+    background-color: #777777;
+    overflow: hidden;
+    width: 100%;
+    height: 193px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    visibility: hidden;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup .show {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.details {
+    cursor: pointer;
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    z-index: 99;
+    color: black !important;
+}
+
+.git-icon {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 99;
+}
+
+.toCode {
+    color: black !important;
+}
+
+.text {
+    width: 100%;
+    padding: 0 10px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+}
+
+/* show more content begin*/
 
 .collapsible {
     background-color: #777;
@@ -343,11 +357,9 @@ h3 {
     text-align: left;
     outline: none;
     font-size: 15px;
-    /* padding: 10px 10px 20px 10px; */
     border: 1px solid #BFBFBF;
-    /* background-color: white; */
     box-shadow: 10px 10px 5px #aaaaaa;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .activate, .collapsible:hover {
@@ -367,7 +379,8 @@ h3 {
 }
 
 .content {
-    /* padding: 0 18px; */
+    width: 100%;
+    padding: 0 30px 0 30px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -375,17 +388,11 @@ h3 {
 
 /* end show more content */
 
-/* h3.carousel-caption.p-1.mt-4 { */
-
-/* width: 93.8%;
-    background-color: #777777;
-    position: absolute; */
-
-/* } */
-
 .fixed-bottom {
     position: relative;
 }
+
+/* styling for icons on AboutMe section */
 
 .fa {
     color: #777777;
@@ -402,6 +409,8 @@ a {
     color: #777777!important;
 }
 
+/* styling for footer */
+
 footer {
     /* background: #ffffff;
     color: #ffffff; */
@@ -411,9 +420,7 @@ footer {
     margin: 0px 17.5% 5%;
 }
 
-.col-6 {
-    position: relative;
-}
+/* style for possible 3d carousel for projects */
 
 .container-2 {
     margin: 0 auto;
@@ -485,7 +492,6 @@ footer {
     border-radius: 5px;
     border-top: 1px solid #FFF;
     box-shadow: 0 5px 0 #999;
-    /* transition: box-shadow 0.1s, top 0.1s; */
 }
 
 .next:hover, .prev:hover {
@@ -505,6 +511,8 @@ footer {
     left: 5em;
 }
 
+/* styling for back to top arrow button */
+
 #topArrow {
     display: none;
     position: fixed;
@@ -514,13 +522,8 @@ footer {
     font-size: 18px;
     border: none;
     outline: none;
-    /* background-color: red; */
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
 }
-
-/* #myBtn:hover {
-    background-color: #555;
-} */
