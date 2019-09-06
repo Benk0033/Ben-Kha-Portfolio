@@ -133,19 +133,13 @@ body, html {
 
 @media only screen and (min-width: 1700px) {
     .container .sticky {
-        width: 900px
+        width: 910px
     }
 }
 
 @media only screen and (min-width: 1824px) {
     .container .sticky {
-        width: 900px;
-    }
-}
-
-@media only screen and (min-width: 2000px) {
-    .container .sticky {
-        width: 930px;
+        width: 910px;
     }
 }
 
