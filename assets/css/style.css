@@ -67,7 +67,7 @@ body, html {
     background-color: #000;
 }
 
-.sticky {
+.container .sticky {
     position: fixed;
     top: 10px;
     width: 64.5%;
@@ -82,7 +82,7 @@ body, html {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    .sticky {
+    .container .sticky {
         width: 81.5%;
     }
 }
@@ -90,7 +90,7 @@ body, html {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-    .sticky {
+    .container .sticky {
         width: 81.5%;
     }
 }
@@ -98,7 +98,7 @@ body, html {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .sticky {
+    .container .sticky {
         width: 90%;
     }
 }
@@ -106,7 +106,7 @@ body, html {
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-    .sticky {
+    .container .sticky {
         width: 90%;
     }
 }
@@ -114,37 +114,37 @@ body, html {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .sticky {
+    .container .sticky {
         width: 64.5%;
     }
 }
 
 @media only screen and (min-width: 1400px) {
-    .sticky {
+    .container .sticky {
         width: 64.5%;
     }
 }
 
 @media only screen and (min-width: 1500px) {
-    .sticky {
+    .container .sticky {
         width: 62.0%;
     }
 }
 
 @media only screen and (min-width: 1700px) {
-    .sticky {
+    .container .sticky {
         width: 10.0%;
     }
 }
 
 @media only screen and (min-width: 1960px) {
-    .sticky {
+    .container .sticky {
         width: 10.0%;
     }
 }
 
 @media only screen and (min-width: 2000px) {
-    .sticky {
+    .container .sticky {
         width: 10.0%;
     }
 }
