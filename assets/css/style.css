@@ -466,6 +466,17 @@ a {
     margin-right: 15px;
 }
 
+@media (max-width: 500px) {
+    .testimonials {
+        text-align: center;
+    }
+    .testimonials img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}
+
 /* styling for footer */
 
 footer {
