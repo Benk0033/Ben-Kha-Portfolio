@@ -139,13 +139,13 @@ body, html {
 
 @media only screen and (min-width: 1960px) {
     .container .sticky {
-        width: 64.5%;
+        width: 50%;
     }
 }
 
 @media only screen and (min-width: 2000px) {
     .container .sticky {
-        width: 64.5%;
+        width: 50%;
     }
 }
 
