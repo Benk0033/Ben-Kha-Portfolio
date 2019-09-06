@@ -121,11 +121,23 @@ body, html {
 
 @media only screen and (min-width: 1400px) {
     .sticky {
-        width: 66.0%;
+        width: 64.5%;
     }
 }
 
 @media only screen and (min-width: 1500px) {
+    .sticky {
+        width: 62.0%;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .sticky {
+        width: 62.0%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
     .sticky {
         width: 62.0%;
     }
