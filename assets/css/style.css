@@ -119,6 +119,18 @@ body, html {
     }
 }
 
+@media only screen and (min-width: 1400px) {
+    .sticky {
+        width: 66.0%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .sticky {
+        width: 62.0%;
+    }
+}
+
 #header {
     padding-left: 0;
     padding-right: 0;
