@@ -159,13 +159,14 @@ header {
 
 .logo {
     font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 30px;
-    width: 250px;
+    font-size: 40px;
+    width: 220px;
     margin-bottom: 0;
+    padding: 0 !important;
 }
 
 .navbar {
-    padding: 0;
+    padding: 15px 0 0 0;
 }
 
 .navbar-brand {
@@ -273,7 +274,7 @@ h3 {
 
 .work {
     width: 100%;
-    height: 193px;
+    height: 275px;
     transition: transform .2s;
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
@@ -317,7 +318,7 @@ h3 {
     background-color: #777777;
     overflow: hidden;
     width: 100%;
-    height: 193px;
+    height: 275px;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
@@ -338,7 +339,7 @@ h3 {
 .details {
     cursor: pointer;
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     right: 5%;
     z-index: 99;
     color: black !important;
@@ -346,7 +347,7 @@ h3 {
 
 .git-icon {
     position: absolute;
-    bottom: 5%;
+    bottom: 4%;
     left: 5%;
     z-index: 99;
 }
@@ -366,6 +367,7 @@ h3 {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    line-height: 17px;
     /* text-align: center; */
 }
 
