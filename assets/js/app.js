@@ -53,14 +53,14 @@ $(document).ready(function ($) {
         target;
 
     // INITIAL LOAD FUNCTIONS
-    startupFunctions();
+    // startupFunctions();
 
-    $(window).load(function () {
-        if (webGLTrue) {
-            captureScreen();
-        }
-        initialLoader();
-    });
+    // $(window).load(function () {
+    //     if (webGLTrue) {
+    //         captureScreen();
+    //     }
+    //     initialLoader();
+    // });
 
     function startupFunctions() {
         if (isMobile) {
@@ -100,7 +100,7 @@ $(document).ready(function ($) {
         widowControl();
     }, 50);
 
-    window.addEventListener('resize', debounceAdjust);
+    // window.addEventListener('resize', debounceAdjust);
 
     // WIDOW CONTROL
     function widowControl() {
@@ -159,10 +159,10 @@ $(document).ready(function ($) {
                     translateZ: 0,
                     opacity: 0
                 }, {
-                        display: 'none',
-                        delay: 0,
-                        duration: 800
-                    });
+                    display: 'none',
+                    delay: 0,
+                    duration: 800
+                });
 
                 if (webGLTrue) {
                     loadPageCanvas();
@@ -320,8 +320,8 @@ $(document).ready(function ($) {
         $('#loader').velocity({
             opacity: [1, 0]
         }, {
-                duration: 1000
-            });
+            duration: 1000
+        });
 
     }
 
@@ -330,9 +330,9 @@ $(document).ready(function ($) {
         $('#loader').velocity({
             opacity: 0
         }, {
-                delay: 500,
-                duration: 1000
-            });
+            delay: 500,
+            duration: 1000
+        });
 
         setTimeout(function () {
             animateable = false;
@@ -349,8 +349,8 @@ $(document).ready(function ($) {
             translateZ: 0,
             opacity: 1
         }, {
-                duration: 150
-            });
+            duration: 150
+        });
     }
 
     function removePageStatic() {
@@ -365,10 +365,10 @@ $(document).ready(function ($) {
             translateZ: 0,
             opacity: 0
         }, {
-                display: 'none',
-                delay: 900,
-                duration: 500
-            });
+            display: 'none',
+            delay: 900,
+            duration: 500
+        });
 
         setTimeout(function () {
             $('#initialLoader').remove();
